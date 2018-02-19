@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Filter from '../index';
 import { VisibilityFilters } from '../../../logic/consts';
-import renderer from 'react-test-renderer';
 
 //These are used to pass a mock store down through nested components
 import configureStore from 'redux-mock-store';
@@ -32,5 +31,5 @@ describe("Filter ToDo", () => {
     it('should have 3 filter values', () => {
         expect(wrapper.find('a')).toHaveLength(3);
     });
-    
+
 })

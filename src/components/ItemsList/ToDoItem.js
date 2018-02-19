@@ -2,6 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
+/****
+ *  ToDo item Component
+ * 
+ *  It displays ToDo item  with ability to mark as complete and delete item 
+ * 
+ *  @param {object} item - item to render as ToDo item
+ *  @callback onMarkComplete
+ *  @callback onDeleteItem
+ */
+
 const ToDoItem = ({item, onMarkComplete, onDeleteItem}) => {
     
     return (

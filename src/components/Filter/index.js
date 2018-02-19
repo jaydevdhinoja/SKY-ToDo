@@ -2,11 +2,20 @@ import React, { Component, PropTypes } from 'react';
 import { setVisibilityFilter } from '../../logic/filterReducer';
 import { connect } from 'react-redux';
 
+//filters
 import {VisibilityFilters} from '../../logic/consts';
 const {SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE} = VisibilityFilters;
 
+/****
+ *  Filter component to allow filtering Active, Completed or All items
+ * 
+ *  It renders Show All, Completed and Active links
+ *  @param {string} filter - filter value 
+ * 
+ */
 
 class Filter extends Component {
+
 
     handleClick (filter, event) {
         event.preventDefault();
