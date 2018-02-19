@@ -1,0 +1,23 @@
+.itemsList-ul {
+  list-style-type: none;
+  max-width: 32%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.itemsList-ul li {
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.todo-item-delete{
+  position: absolute;
+  right: 18px;
+  cursor: 'pointer';
+}
+
+span {
+  padding-left: 2px;
+}
